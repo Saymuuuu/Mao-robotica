@@ -36,7 +36,7 @@ void loop() {
  
   int flex5_pos = analogRead(flex5); 
   int servo5_pos = map(flex5_pos, 827, 793, 0, 180); 
-  servo5.write(constrain(servo5_pos, 180, 0));
+  servo5.write(constrain(servo5_pos, 0, 180));
  
   Serial.print(flex1_pos);
   Serial.print("--");
